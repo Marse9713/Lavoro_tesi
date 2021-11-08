@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/gestionale_rhind/css/login.css'>
+    <link rel="shortcut icon" href="#">
+    <script src="/gestionale_rhind/js/login.js" type="module"></script>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+        </script>
+</head>
+
+<body>
+    <div class="login">
+
+        <div class="login_wrapper">
+
+            <img src="/gestionale_rhind/other/rhind.png">        
+    
+            <h1>Login</h1>
+            <label for="uname"><b>Email: </b></label>
+            <input type="text" name="email" id="email" autocomplete="off" autofocus>
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" name="password" id="psw">
+            <button type="submit" id="submit">Login</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

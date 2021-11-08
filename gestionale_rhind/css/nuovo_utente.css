@@ -1,0 +1,60 @@
+.note{
+    resize: none;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-field > label{
+    font-size: 22px;
+ 
+}
+
+.text-field > input, .text-field > textarea {
+    font-size: 18px;
+    padding: 6px 20px;
+    margin:7px 0px 15px 0px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    width: 60vw;
+    align-self: center;
+    max-width: 700px;
+    box-shadow: #bbb 0px 3px 7px;
+}
+
+.wrapper > h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > button{
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    margin: 5px 10px ;
+    padding:7px 0px;
+    border:none;
+    background: #ddd;
+}

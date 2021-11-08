@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clienti</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/gestionale_rhind/css/clienti.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='/gestionale_rhind/js/clienti.js'></script>
+    <link rel="shortcut icon" href="#">
+    <script type="text/javascript">
+    
+        function preventBack() {
+            window.history.forward(); 
+        }
+        onload();
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+
+        </script>
+    
+</head>
+<body>
+
+    <div class="body-input">
+
+            <div class="table">
+            <h1>Tabella Clienti</h1>
+
+            <select id="sel" class="sel" autofocus multiple onkeydown="select(event)" onclick="selectm()">
+            </select>
+            </div>
+
+            <div class="buttons">
+
+                <h1>Funzioni</h1>
+
+                <button type="submit" id="change" class="button" onkeydown="change(event)" onmousedown="changem()">Modifica</button>
+                <button type="submit" id="new" class="button" onkeydown="newclient(event)" onmousedown="newclientm()">Nuovo cliente</button>
+                <button type="submit" id="delete" class="button" onkeydown="deleteclient(event)" onmousedown="deleteclientm()">Elimina Cliente</button>
+                <button type="submit" id="back" class="button" onkeydown="goback(event)" onmousedown="gobackm()">Torna indietro</button>
+            
+            </div>
+    </div>
+
+    <div class="modal fade" id="modal">
+
+        <div class="modal-content">
+
+            <h1>Sicuro di voler cancellare l'utente?</h1>
+
+            <button type="submit" id="yes" class="modal-buttons" onkeydown="onkeydelaff(event)" onmousedown="onmdelaff()">Si</button>
+            <button type="submit" id="no" class="modal-buttons" onkeydown="onkeydel(event)" onmousedown="onmdel()">No</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

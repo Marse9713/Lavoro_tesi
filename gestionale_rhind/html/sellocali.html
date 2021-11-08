@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Selezione per cliente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/gestionale_rhind/css/clienti.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='/gestionale_rhind/js/clienti.js'></script>
+    <link rel="shortcut icon" href="#">
+    <script type="text/javascript">
+    
+        function preventBack() {
+            window.history.forward(); 
+        }
+        onload();
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+
+        </script>
+    
+</head>
+<body>
+
+    <div class="body-input">
+
+            <div class="table">
+            <h2>Tabella clienti per selezione dei locali</h2>
+
+            <select id="sel" class="sel" autofocus multiple onkeydown="select(event)" onclick="selectm()">
+            </select>
+            </div>
+
+            <div class="buttons">
+
+                <h1>Funzioni</h1>
+
+                <button type="submit" id="set" class="button" onkeydown="presssel(event)" onmousedown="pressselm()">Seleziona cliente</button>
+                <button type="submit" id="back" class="button" onkeydown="goback(event)" onmousedown="gobackm()">Torna indietro</button>
+            
+            </div>
+    </div>
+    
+</body>
+</html>

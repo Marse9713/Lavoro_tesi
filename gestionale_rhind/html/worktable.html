@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkTable</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/worktable.css'>
+    <script src='/js/worktable.js' type="module"></script>
+    <script type="text/javascript" src="/json/anagrafe.json"></script>
+    <link rel="shortcut icon" href="#">
+
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+        </script>
+</head>
+<body>
+
+    <h1>WorkTable</h1>
+
+    <div>
+        <br>
+        <label>Nome</label>
+        <input type="text" name="name" id="name">
+        <br>
+    </div>    
+    
+    <div>
+        <br>
+        <label>Cognome</label>
+        <input type="text" name="name" id="name">
+        <br>
+    </div>
+
+    <div>
+        <br>
+        <label>P.IVA</label>
+        <input type="text" name="PIVA" id="piva">
+        <br>
+    </div>
+
+    <div>
+        <br>
+        <label>Codice Cliente</label>
+        <input type="text" name="code" id="codeclient">
+        <br>
+    </div>
+
+    <div>
+        <br>
+        <label>Numero di telefono</label>
+        <input type="phone" name="phone" id="phone">
+        <br>
+    </div>
+
+    <div>
+        <br>
+        <label>Note</label>
+        <br>
+        <textarea class="note" id="note"></textarea>
+        <br>
+    </div>
+
+    <div>
+
+        <br>
+        <!--generatore automatico di elementi per poter caricare le varie sedi e tutto-->
+
+    </div>
+
+    <div>
+        <br>
+        <button type="submit" name="Conf" id="conf">Conferma</button>
+        <button type="submit" name="back" id="back">Torna indietro</button>
+        <br>
+    </div>
+    
+</body>
+</html>

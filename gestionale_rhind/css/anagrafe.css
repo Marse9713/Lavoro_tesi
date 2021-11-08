@@ -1,0 +1,42 @@
+.fatture{
+
+    display: block;
+    width: 50vw;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.button-anagrafe{
+
+    display: grid;
+    width: 50vw;
+    justify-content: center;
+
+}
+
+.button-anagrafe > button{
+
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.anagrafe_e_fatture{
+
+    display: inline-flex;
+
+}
+
+.anagrafe{
+
+    width: 50vw;
+
+}
+
+.signOut{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+}

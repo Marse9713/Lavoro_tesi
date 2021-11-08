@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina Iniziale</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/gestionale_rhind/css/anagrafe.css'>
+    <script src='/gestionale_rhind/js/anagrafe.js'></script>
+    <link rel="shortcut icon" href="#">
+    <script type="text/javascript">
+        function preventBack() {
+
+            window.history.forward(); 
+
+        };
+          
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function () { null };
+
+        </script>
+</head>
+<body>
+    <div class="signOut">
+
+        <button class="signOut" id="signOut" type="submit" onclick="signOut()">SignOut</button>
+
+    </div>
+
+    <div class="anagrafe_e_fatture">
+    <div class="fatture">
+
+        <h1>Fatture</h1>
+
+        <from id="sel" class="sel" multiple>
+
+        </select>
+
+    </div>
+
+    <div class="anagrafe">
+    
+    <div class="button-anagrafe">
+
+        <h1>Anagrafe</h1>
+
+            <button id="client" onkeydown="cliente(event)" onmousedown="clientem()" autofocus>Cliente</button>
+            <button id="location" onkeydown="locale(event)" onmousedown="localem()" >Locale</button>
+            <button id="company" onkeydown="ditta(event)" onmousedown="dittam()">Ditta</button>
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>

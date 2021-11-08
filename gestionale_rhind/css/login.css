@@ -1,0 +1,68 @@
+h1{
+
+    font-size: 40px;
+    text-align: center;
+
+}
+
+body{
+
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.login{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: revert;
+    align-content: center;
+
+}
+
+.login_wrapper{
+
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #666 0px 2px 4px ;
+    padding: 20px 10px;
+    box-sizing: border-box;
+
+}
+
+.login_wrapper > input {
+
+    margin-top: 10px;
+    padding: 7px 5px;
+    font-size: 18px;
+    width: 70%;
+
+}
+
+.login img{
+    
+    object-fit: contain;
+    width: 80%;
+
+}
+
+.login_wrapper > label {
+
+    width: 90%;
+
+}
+
+
+.login_wrapper button {
+
+    width: 60%;
+    margin-top: 10px;
+
+}

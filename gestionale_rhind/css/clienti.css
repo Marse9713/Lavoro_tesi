@@ -1,0 +1,63 @@
+.body-input{
+
+    display: inline-flex;
+    padding-left: 20px;
+
+}
+
+.table{
+
+    display: block;
+    width: 45vw;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.buttons > button{
+
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.buttons{
+
+    display: grid;
+    height: 50%;
+    width: 50vw;
+    justify-content: center;
+
+}
+
+.button-signout{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.sel{
+
+    width: 100%;
+    overflow: auto;
+    height: 70vh;
+
+}
+
+.modal{
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 50vw;
+    background-color: white;
+    
+}
+
+.modal-backdrop{
+
+    background-color: rgb(255, 94, 0);
+
+}
