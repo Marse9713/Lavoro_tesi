@@ -1,5 +1,38 @@
 //get buttons
 
+function onload(){
+
+    var myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
+    myHeaders.append( 'Accept','application/json');
+    
+    fetch("http://192.168.1.175:5000/fatture", {
+    
+           headers: myHeaders,
+           mode: 'cors',
+           method: "GET"
+    
+    }).then(d => {
+                            
+           let data = d.json();
+           return data;
+                        
+    }).then(data =>{
+    
+           let option;
+    
+           for (let i = 0; i < data[0].length; i++){
+    
+                  option = document.createElement('option');
+    
+                  option.text = data[0][i].data + " " + data[0][i].ccliente;
+    
+                  sel.add(option);
+                  
+           }
+    });
+    }
+
 function signOut(){
 
     window.location.href = "/";
