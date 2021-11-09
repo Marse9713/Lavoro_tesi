@@ -1,6 +1,28 @@
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 //go back
+
+function addc(e){
+
+    key = e.keyCode;
+
+    if(key == 13){
+
+        var addid = addid++;
+        var txtNewInputBox = document.createElement('input');
+        txtNewInputBox.id = "phone_" + addid;
+        txtNewInputBox.innerHTML += "<input name='phone'  autocomplete='off' onkeydown='nexth(event)' oninput='this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');>";
+        var span = document.createElement('button');
+        span.innerHTML += "<span name='dellphone'>";
+        document.getElementById("cell").appendChild(txtNewInputBox);
+        document.getElementById("cell").appendChild(span);
+        document.getElementById("phone_" + addid).focus();
+
+    }
+
+
+}
+
 function back(e){
 
     var key = e.keyCode;
