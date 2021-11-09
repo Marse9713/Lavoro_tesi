@@ -6,22 +6,27 @@ function addc(e){
 
     key = e.keyCode;
 
-    if(key == 13){
+    var addid = 0;
 
-        var addid = addid++;
-        var txtNewInputBox = document.createElement('input');
-        txtNewInputBox.id = "phone_" + addid;
-        txtNewInputBox.innerHTML += "<input name='phone'  autocomplete='off' onkeydown='nexth(event)' oninput='this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');>";
-        var span = document.createElement('button');
-        span.innerHTML += "<span name='dellphone'>";
-        document.getElementById("cell").appendChild(txtNewInputBox);
-        document.getElementById("cell").appendChild(span);
-        document.getElementById("phone_" + addid).focus();
+    if (key == 13){
+
+        addid++;
+
+        var ninput = document.createElement('div');
+        ninput.id = "dphone_" + addid;
+        //ninput.innerHTML += "<input type='text' name='phone' id='phone' autocomplete='off' onkeydown='nextc(event)' oninput='this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');'></input>";
+        //ninput.innerHTML += "<button type='submit' >X</button>"
+        document.getElementById("cell").appendChild(ninput);
+
+
+    } else {
+
+        return false;
 
     }
 
 
-}
+};
 
 function back(e){
 
