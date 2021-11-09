@@ -1,32 +1,28 @@
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-//go back
+//da sistemare i numeri  di telefono e i vari elementi di caricamento dei dati nel database
+/*function createNumInput(){
+
+    return false;
+
+}
 
 function addc(e){
 
     key = e.keyCode;
 
-    var addid = 0;
-
     if (key == 13){
 
-        addid++;
+        createNumInput();
 
-        var ninput = document.createElement('div');
-        ninput.id = "dphone_" + addid;
-        //ninput.innerHTML += "<input type='text' name='phone' id='phone' autocomplete='off' onkeydown='nextc(event)' oninput='this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');'></input>";
-        //ninput.innerHTML += "<button type='submit' >X</button>"
-        document.getElementById("cell").appendChild(ninput);
+    } else if (key == 38){
 
-
-    } else {
-
-        return false;
+        var currentElement = document.activeElement.id;
 
     }
 
 
-};
+};*/
 
 function back(e){
 
