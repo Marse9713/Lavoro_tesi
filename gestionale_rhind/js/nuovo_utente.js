@@ -1,9 +1,20 @@
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var add = 0;
 
 //da sistemare i numeri  di telefono e i vari elementi di caricamento dei dati nel database
-/*function createNumInput(){
+function createNumInput(){
 
-    return false;
+    add++;
+    var i = document.createElement('input');
+    i.setAttribute('type', "text");
+    i.setAttribute('name', ("cell_") + add);
+    i.setAttribute('autocomplete', "off");
+    i.setAttribute('id', ("cell_" + add));
+    i.setAttribute('oniput', "this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');")
+    var b = document.createElement('button');
+    b.setAttribute('type', "submit");
+    //b.setAttribute('', "")
+    return i;
 
 }
 
@@ -13,16 +24,19 @@ function addc(e){
 
     if (key == 13){
 
-        createNumInput();
+        var parent = document.getElementById("cell");
+        parent.appendChild(createNumInput());
+        document.getElementById("cell_" + add).focus();
+        
 
     } else if (key == 38){
 
-        var currentElement = document.activeElement.id;
+
 
     }
 
 
-};*/
+};
 
 function back(e){
 
