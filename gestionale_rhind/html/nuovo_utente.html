@@ -51,17 +51,6 @@
 
         </div>
 
-        <div class="text-field" id="hphone">
-            <label>Numero di casa*</label>
-            <input name="hphone" id="hphone" autocomplete="off" onkeydown="nexth(event)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-        </div>
-
-        <div class="plus_h">
-
-            <button class=" plus_cell" type="submit" name="plusc" id="plusc" onkeydown="addh(event)" onmousedown="addhm()">+</button>
-
-        </div>
-
         <div class="text-field email">
             <label>E-mail*</label>
             <input type="email" name="email" id="email" autocomplete="off" onkeydown="nexte(event)">
@@ -72,7 +61,7 @@
             <textarea class="note" rows="4" id="note" autocomplete="off" onkeydown="nextno(event)"></textarea>
         </div>
 
-        <p class="required"> Almeno un numero è necessario</p>
+        <p class="required"> *Almeno un numero è necessario</p>
 
         <div class="buttons">
             <button type="submit" name="nuovo" id="ncli" disabled onkeydown="register_user(event)" onmousedown="register_userm()">Registra Cliente</button>
