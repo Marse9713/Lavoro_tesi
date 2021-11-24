@@ -8,7 +8,7 @@ const da = function(){
        myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
        myHeaders.append( 'Accept','application/json');
 
-    fetch("http://192.168.1.175:5000/clienti/:" + id_cliente, {
+    fetch("http://localhost:5000/clienti/:" + id_cliente, {
        
                headers: myHeaders,
                mode: 'cors',
@@ -29,7 +29,7 @@ function onload(){
        myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
        myHeaders.append( 'Accept','application/json');
 
-    fetch("http://192.168.1.175:5000/clienti/:" + id_cliente, {
+    fetch("http://localhost:5000/clienti/:" + id_cliente, {
        
                headers: myHeaders,
                mode: 'cors',
@@ -71,7 +71,7 @@ function controllconf(){
        myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
        myHeaders.append( 'Accept','application/json');
 
-    fetch("http://192.168.1.175:5000/clienti/:" + id_cliente, {
+    fetch("http://localhost:5000/clienti/:" + id_cliente, {
        
                headers: myHeaders,
                mode: 'cors',
@@ -288,7 +288,7 @@ function modifica_userm(){
 
     var formBody = prepareDataForPost(data);
 
-    fetch("http://192.168.1.175:5000/update/:" + id_cliente, {
+    fetch("http://localhost:5000/update/:" + id_cliente, {
 
         headers: myHeaders,
         mode: 'cors',
@@ -337,7 +337,7 @@ function modifica_user(e) {
 
     var formBody = prepareDataForPost(data);
 
-    fetch("http://192.168.1.175:5000/update/:" + id_cliente, {
+    fetch("http://localhost:5000/update/:" + id_cliente, {
 
         headers: myHeaders,
         mode: 'cors',

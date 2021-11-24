@@ -205,7 +205,7 @@ function register_userm(){
 
     var formBody = prepareDataForPost(data);
 
-    fetch("http://192.168.1.175:5000/clienti", {
+    fetch("http://localhost:5000/clienti", {
 
         headers: myHeaders,
         mode: 'cors',
@@ -259,7 +259,7 @@ function register_user(e) {
 
     var formBody = prepareDataForPost(data);
 
-    fetch("http://192.168.1.175:5000/clienti", {
+    fetch("http://localhost:5000/clienti", {
 
         headers: myHeaders,
         mode: 'cors',

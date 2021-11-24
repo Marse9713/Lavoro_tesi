@@ -7,7 +7,7 @@ var myHeaders = new Headers();
 myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
 myHeaders.append( 'Accept','application/json');
 
-fetch("http://192.168.1.175:5000/clienti", {
+fetch("http://localhost:5000/clienti", {
 
        headers: myHeaders,
        mode: 'cors',

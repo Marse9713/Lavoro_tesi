@@ -5,19 +5,23 @@ import { getAuth, signInWithEmailAndPassword, onAuthStateChanged} from "https://
 //config firebase
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBchXNbq9LMI8df7eeLnSk9usxeHWQUOQM",
+  apiKey: "AIzaSyA4pHIJnNPrpa8t2epRg-aOS3Qdjbc4OUc",
 
-  authDomain: "login-rhind.firebaseapp.com",
+  authDomain: "login--tesi.firebaseapp.com",
 
-  projectId: "login-rhind",
+  projectId: "login--tesi",
 
-  storageBucket: "login-rhind.appspot.com",
+  storageBucket: "login--tesi.appspot.com",
 
-  messagingSenderId: "793042847504",
+  messagingSenderId: "963205763990",
 
-  appId: "1:793042847504:web:9e948e70639b7931800795"
+  appId: "1:963205763990:web:d7767f304e94134cd4c3b7",
+
+  measurementId: "G-72H8Y257C2"
 
 };
+
+
 
 //initialize dell'applicazione di firebase
 const app = initializeApp(firebaseConfig);
