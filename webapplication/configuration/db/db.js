@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const { config } = require("process");
-const dbConfig = require("./dbconfig/dbconfig.js");
+const dbConfig = require("../controller/dbconfig/dbconfig.js");
 
 const pool = mysql.createPool({
 
