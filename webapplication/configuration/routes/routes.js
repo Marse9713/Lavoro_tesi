@@ -14,6 +14,6 @@ module.exports = app => {
 
     router.delete("/clienti/:id", controller.deleteClientId);
 
-    app.use("/", router);
+    app.use("/gestionale", router);
 
 };
